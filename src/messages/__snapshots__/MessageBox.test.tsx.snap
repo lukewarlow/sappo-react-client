@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MessageBox renders correctly 1`] = `
+<div
+  className="d-inline-block w-100 mb-2"
+>
+  <div
+    className="card  bg-success float-right message-box"
+  >
+    <div
+      className="card-body"
+      title="6 days ago"
+    >
+      <div
+        className="font-weight-bold"
+      >
+        Test User
+        : 
+        Hello Everyone
+      </div>
+    </div>
+  </div>
+</div>
+`;

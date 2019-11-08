@@ -1,0 +1,8 @@
+.toast-container {
+    z-index: 2;
+}
+
+.toast-position {
+    top: 0;
+    right: 0;
+}
