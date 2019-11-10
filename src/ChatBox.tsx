@@ -22,7 +22,7 @@ export default class ChatBox extends React.Component<IChatBoxProps, IChatBoxStat
             let toasts = this.state.toasts;
             if (user != this.props.currentUsername)
             {
-                toasts.push({title: 'Users Connected', message: `${user} has connected.`});
+                toasts.push({title: 'User Connected', message: `${user} has connected.`});
 
                 this.setState({toasts: toasts});
 
@@ -34,7 +34,7 @@ export default class ChatBox extends React.Component<IChatBoxProps, IChatBoxStat
 
         onUserDisconnects((user) => {
             let toasts = this.state.toasts;
-            toasts.push({title: 'Users Connected', message: `${user} has disconnected.`});
+            toasts.push({title: 'User Disconnected', message: `${user} has disconnected.`});
 
             this.setState({toasts: toasts});
 
@@ -51,7 +51,7 @@ export default class ChatBox extends React.Component<IChatBoxProps, IChatBoxStat
 
         MessagesApi.retrieveMessages()
             .then(m => {
-                this.setState({messages: (m as SpeciesMessage[])});
+                this.setState({messages: m});
             });
 
         this.updateMessageContent = this.updateMessageContent.bind(this);
